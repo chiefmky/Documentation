@@ -1,0 +1,101 @@
+body {
+	background: #f5d9d5;
+	font-family: "Nunito", sans-serif;
+}
+#container {
+	width: 100%;
+	height: 100%;
+}
+#navbar li {
+	border-top: 1px solid gray;
+	font-size: 1.2rem;
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+#navbar a {
+	cursor: pointer;
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+#navbar ul {
+	height: 88%;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#main-doc {
+	position: absolute;
+	margin-left: 350px;
+	padding: 20px;
+	margin-bottom: 110px;
+}
+#navbar {
+	position: fixed;
+	min-width: 290px;
+	top: 0px;
+	left: 0px;
+	width: 340px;
+	height: 100%;
+	border-right: solid;
+	border-color: rgba(0, 22, 22, 0.4);
+}
+nav header {
+	font-size: 1.4rem;
+	font-weight: 100;
+	text-align: center;
+}
+
+code {
+	display: block;
+	text-align: left;
+	position: relative;
+	line-height: 1;
+	background-color: #f7f7f7;
+	margin: 10px;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+	/* For mobile phones: */
+	#navbar ul {
+		border-top: 1px solid;
+		height: 170px;
+	}
+
+	#navbar {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		max-height: 270px;
+		border: none;
+		z-index: 1;
+		border-bottom: 2px solid;
+	}
+
+	#main-doc {
+		position: relative;
+		margin-left: 0px;
+		margin-top: 270px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#main-doc {
+		margin-left: -10px;
+	}
+
+	code {
+		margin-left: -20px;
+		width: 100%;
+		padding: 15px;
+		padding-left: 10px;
+		padding-right: 45px;
+		min-width: 233px;
+	}
+}
